@@ -1,0 +1,6 @@
+@AllungaWebAPI_HostAddress = http://localhost:5104
+
+GET {{AllungaWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
