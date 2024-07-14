@@ -26,7 +26,10 @@ public static class ReportsParamEP
 
                 foreach (var rp in rps)
                 {
-                    var dd =  dbrps.Where(model => model.id == rp.id).FirstOrDefault();
+                    try
+                    {
+
+                        var dd =  dbrps.Where(model => model.id == rp.id || (rp.id==0 && model.reportid== rp.reportid && model.paramid == rp.paramid)).FirstOrDefault();
                     if (dd == null)
                     {
                         dd = new ReportParam();
@@ -43,6 +46,11 @@ public static class ReportsParamEP
 
                     }
                     await db.SaveChangesAsync();
+                    }
+                    catch (Exception ex)
+                    {
+                        ;// throw ex;
+                    }
                 }
                 return TypedResults.Ok();
             }
