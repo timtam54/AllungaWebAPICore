@@ -29,6 +29,7 @@ app.UseHttpsRedirection();
 app.UseCors("MyPolicy");
 app.MapReportsPerDayEndpoints();
 app.MapReportsParamEndpoints();
+app.MapParmReportsEndpoints();
 
 app.Run();
 
