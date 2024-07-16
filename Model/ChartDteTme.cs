@@ -12,4 +12,11 @@ namespace AllungaWebAPI.Model
         public int cnt { get; set; }
         public string title { get; set; }
     }
+
+    public class ChartKey
+    {
+        [Key]
+        public int cnt { get; set; }
+        public string title { get; set; }
+    }
 }

@@ -12,5 +12,6 @@ namespace AllungaWebAPI.Data
         public DbSet<ReportParam> reportparam { get; set; }
 
         public DbSet<Report> report { get; set; }
+        public DbSet<ChartKey> chartKey { get; set; }
     }
 }
