@@ -8,9 +8,9 @@ public static class SampleParamReportsEP
 
         var group = routes.MapGroup("/api/SampleParamReports").WithTags(nameof(SampleParamReportsEP));
 
-        group.MapGet("/", async (dbcontext db) =>
+        group.MapGet("/id/ParamID", async (int id,int ParamID,dbcontext db) =>
         {
-            return await db.chrtdtetme.FromSql($"exec ChartReportSamplesParams").ToListAsync();
+            return await db.chrtdtetme.FromSql($"exec ChartReportSamplesParams {id},{ParamID}").ToListAsync();
         })
         .WithName("GetSampleParamReports")
         .WithOpenApi();

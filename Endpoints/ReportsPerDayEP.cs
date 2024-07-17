@@ -8,9 +8,9 @@ public static class ReportsPerDayEP
 
         var group = routes.MapGroup("/api/ReportsPerDay").WithTags(nameof(ReportsPerDayEP));
 
-        group.MapGet("/SampleID/ParamID", async (int SampleID,int ParamID,dbcontext db) =>
+        group.MapGet("/", async (dbcontext db) =>
         {
-            return await db.chrtdtetme.FromSql($"exec ReportByDate {SampleID}, {ParamID}").ToListAsync();
+            return await db.chrtdtetme.FromSql($"exec ReportByDate").ToListAsync();
         })
         .WithName("GetReportsPerDay")
         .WithOpenApi();
