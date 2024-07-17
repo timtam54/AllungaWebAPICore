@@ -9,7 +9,7 @@ namespace AllungaWebAPI.Model
         [Key] 
         public string ky { get; set; }
         public DateTime date { get; set; }
-        public int cnt { get; set; }
+        public decimal cnt { get; set; }
         public string title { get; set; }
     }
 
