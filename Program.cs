@@ -30,8 +30,8 @@ app.UseCors("MyPolicy");
 app.MapReportsPerDayEndpoints();
 app.MapReportsParamEndpoints();
 app.MapParmReportsEndpoints();
-app.MapSampleParamReportsEndpoints(); 
-
+app.MapSampleParamReportsEndpoints();
+app.MapParamSampleReportsEPEndpoints();
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
