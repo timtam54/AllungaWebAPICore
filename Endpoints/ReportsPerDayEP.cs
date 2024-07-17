@@ -6,7 +6,7 @@ public static class ReportsPerDayEP
     public static void MapReportsPerDayEndpoints(this IEndpointRouteBuilder routes)
     {
 
-        var group = routes.MapGroup("/api/TechReportEquipJobsPerDay").WithTags(nameof(ReportsPerDayEP));
+        var group = routes.MapGroup("/api/ReportsPerDay").WithTags(nameof(ReportsPerDayEP));
 
         group.MapGet("/", async (dbcontext db) =>
         {
