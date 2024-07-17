@@ -9,5 +9,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQ11puOqBnk2YVdRrtU9RuQAAAAACAAAAAAAQZgAAAAEAACAAAADXySL11S+l2cvrj+wgUt1p4+dqtQSLvSgdhXjidSKECQAAAAAOgAAAAAIAACAAAACr2E9FGNunmWWFlzhYkdqY0pSbLqxR8O9UTJucTh+Jd4AAAADXDZOoiw3mBfYHGBrlBlZZlve9I0q0GZ+QmBmNXDDUxVhcxNIj1HyrLCjXXD+NA1aLukhYYbHOdLalytfisrCKTdEa0EnCS73+q/qgDeu0etHo3lhovfdGwlCeZ1+6dKjSn3cj2JjEe0lus0FA5WbaeOQ6GC5DxWcb2duvVlvCx0AAAAB9HMK3Q1IX7q1w7xpd6xcWOg9q9zmFWkHxPWFiBppc9LcXXTk9K7Yv/GvWfOXe821Q6XJxkpshST9l4hvd/nlr</EncryptedPassword>
     <History>False|2024-07-16T05:13:05.1510973Z||;</History>
     <LastFailureDetails />
+    <IsBasicAuthAllowed>True</IsBasicAuthAllowed>
   </PropertyGroup>
 </Project>
