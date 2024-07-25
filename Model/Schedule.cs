@@ -9,6 +9,8 @@ namespace AllungaWebAPI.Model
         public int? cntsamplesonsite{ get; set; }
         public string? rackno { get; set; }
         public DateTime? date { get; set; }
+
+        public DateTime? end { get; set; }
         public string? reportname { get; set; }
         public  string? bookandpage { get; set; }
         public  string? allungareference { get; set; }
