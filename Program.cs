@@ -35,6 +35,7 @@ app.MapParamSampleReportsEPEndpoints();
 app.MapScheduleActualEPEndpoints();
 app.MapScheduleProjectedEPEndpoints();
 app.MapSampleOnOffSiteActualEPEndpoints();
+app.MapSampleOnOffSiteProjectedEPEndpoints();
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
